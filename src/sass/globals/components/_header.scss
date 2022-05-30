@@ -12,3 +12,33 @@
     box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
   }
 }
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__logo {
+    margin-right: 2.5rem;
+
+    &--image {
+      min-width: 10.2rem;
+    }
+  }
+
+  &__menu {
+    background-color: var(--dark-clr);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 25rem;
+    transform: translateX(-26rem);
+    z-index: 999;
+    transition: transform 0.5s ease-in;
+
+    &.active {
+      transform: translateX(0);
+    }
+  }
+}
