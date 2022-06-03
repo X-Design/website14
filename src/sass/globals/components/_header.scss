@@ -1,3 +1,19 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  transition: opacity 0.25s;
+
+  &:is(:hover, :focus) {
+    opacity: .8;
+  }
+
+  &--action {
+    font-size: 1.8rem;
+    color: var(--light-clr);
+  }
+}
+
+
 .header {
   position: fixed;
   z-index: 999;
@@ -40,5 +56,35 @@
     &.active {
       transform: translateX(0);
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+
+    &-item {
+      border-bottom: 1px solid rgba(255, 255, 255, .1);
+    }
+
+    &-item:last-of-type {
+      border-bottom: none;
+    }
+
+    &-link {
+      display: block;
+      color: var(--light-clr);
+      padding: 1rem;
+      transition: opacity 0.25s;
+
+      &:is(:hover, :focus) {
+        opacity: .5;
+      }
+    }
+  }
+
+  &__btn-group {
+    display: flex;
+    column-gap: 1.5rem;
+
   }
 }
