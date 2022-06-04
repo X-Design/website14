@@ -10,6 +10,18 @@
   &--action {
     font-size: 1.8rem;
     color: var(--light-clr);
+    line-height: 0;
+  }
+
+  &--text {
+    font-family: var(--title-font);
+    left: 1px;
+    font-size: 2rem;
+    padding: 1rem 3rem;
+  }
+
+  &--transparant {
+    color: var(--light-clr-2);
   }
 }
 
