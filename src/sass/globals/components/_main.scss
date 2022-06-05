@@ -1,0 +1,59 @@
+.main {
+  overflow-x: hidden;
+}
+
+// !===SHOWCASE===-->
+.title {
+  font-family: var(--title-font);
+  color: var(--light-clr-3);
+  letter-spacing: 1px;
+  font-size: 3.6rem;
+
+  &--main {
+    font-size: clamp(4.2rem, 8vw, 10rem);
+    line-height: 1.2;
+    background: url(/src/assets/images/showcase_image_lg.png) center 37% no-repeat;
+    background-size: cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 10;
+  }
+}
+
+.showcase {
+  padding-top: 14.5rem;
+
+  &__container {
+    text-align: center;
+  }
+
+  &__image {
+    display: inline-block;
+    transform: translateY(-3rem);
+  }
+}
+
+// !===PORTFOLIO===-->
+
+.portfolio {
+  padding-top: 7.4rem;
+  padding-bottom: 12rem;
+
+  &__metadata {
+    padding-bottom: 4rem;
+    text-align: left;
+  }
+}
+
+.swiper--slide {
+  width: 30rem;
+  height: 30rem;
+
+  & img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}

@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cris Paul</title>
+    <title>Herman Ik</title>
+    <link rel="stylesheet" href="/public/css/style.css">
     <!-- REMIXICON -->
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <!-- SWIPER -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <!-- SCROLL REVEAL -->
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link rel="stylesheet" href="/public/css/style.css">
 </head>
 
 <body>
@@ -58,21 +58,88 @@
         </nav>
     </header>
     <!--! === MAIN === -->
-
+    <main>
     <!--! === SHOWCASE === -->
-
+        <section class="showcase" id="showcase">
+            <div class="showcase__container container">
+                <h1 class="showcase__title title title--main">I'm Harry Eland, Heel eng hoor</h1>
+                <picture class="showcase__image">
+                    <source media="(min-width: 768px )" srcset="/src/assets/images/showcase_image_lg.png">
+                    <img src="/src/assets/images/showcase_image_sm.png" alt="" srcset="">
+                </picture>
+            </div>
+        </section>
     <!--! === PORTFOLIO === -->
-
+<section class="portfolio" id="portfolio">
+    <div class="portfolio__container container">
+        <div class="portfolio__metadata section--metadata">
+            <h2 class="title">Mijn werk</h2>
+        </div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrappper">
+                <div class="swiper-slide">
+                    <img src="/src/assets/images/DSC_1552.JPG" alt="" srcset="" width="500px" height="500px">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/500x500" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/501x501" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/502x502" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/503x503" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/504x504" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/505x505" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/506x506" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/507x507" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/508x508" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://source.unsplash.com/509x509" alt="">
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
     <!--! === SERVICES === -->
 
     <!--! === ABOUT === -->
 
     <!--! === BLOG === -->
-
+    </main>
     <!--! === FOOTER === -->
 
     <!-- SWIPERJS -->
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <!-- Swiper JS -->
+      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+      <!-- Initialize Swiper -->
+      <script>
+          const swiper = new Swiper(".mySwiper", {
+              slidesPerView: "auto",
+              centeredSlides: true,
+              spaceBetween: 30,
+              pagination: {
+                  el: ".swiper-pagination",
+                  clickable: true,
+              },
+          });
+      </script>
+      <!-- <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script> -->
     <script src="/src/assets/js/app.js"></script>
 </body>
 

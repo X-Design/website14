@@ -24,5 +24,39 @@ const linksToggleMenu = (e) => {
 window.addEventListener('click', linksToggleMenu);
 
 //! === SWIPER ===
+// //  Initialize Swiper
+// let swiper = new Swiper(".myswiper", {
+// 	effect: "cube",
+// 	grabCursor: true,
+// 	cubeEffect: {
+// 		shadow: true,
+// 		slideShadows: true,
+// 		shadowOffset: 20,
+// 		shadowScale: 0.94,
+// 	},
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 	},
+// });
+
+
+
+// const swiper = new Swiper(".myswiper", {
+// 	effect: 'coverflow',
+// 	grabCursor: true,
+// 	centeredSlides: true,
+// 	slidePerView: 'auto',
+// 	coverFlowEffect: {
+// 		rotate: 50,
+// 		stretch: 0,
+// 		depth: 100,
+// 		modifier: 1,
+// 		slideShadows: true
+// 	},
+// 	pagination: {
+// 		el: ".swiper-pagination",
+// 	},
+// });
+
 
 //! === SCROLL REVEAL ===
